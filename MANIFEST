@@ -1,0 +1,11 @@
+Build.PL
+Changes
+lib/App/AuthorModulesToGitHub.pm
+MANIFEST
+README
+LICENSE
+examples/example.txt
+t/00-load.t
+xt/pod-coverage.t
+xt/pod.t
+xt/kwalitee.t
