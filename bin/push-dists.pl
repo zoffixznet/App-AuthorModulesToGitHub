@@ -85,8 +85,8 @@ sub process_files {
 #
         my $repo_dir = $distro_dir =~ s/-[^-]+$//r;
 
-        ## Use this line if you mess up and need to delete a ton of repos:
-#         `curl -uUSER:PASS -X "DELETE" https://api.github.com/repos/USER/$repo_dir`;
+        # Use this line if you mess up and need to delete a ton of repos:
+#         print `curl -u$GitUser:$GitPass -X "DELETE" https://api.github.com/repos/$GitUser/$repo_dir`;
 
         chdir $distro_dir;
         `git init`;
